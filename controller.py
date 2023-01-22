@@ -3,10 +3,14 @@ import view as v
 import math_fun as m
 from logger import logging
 
+
 def button_click():
     while True:
         type_num = i.menu()
         op = i.menu_calc(type_num)
+        if op == -1:
+            break
+
         if type_num == 1:
             if op == 7:
                 print('Enter number: ', end="")
@@ -15,7 +19,7 @@ def button_click():
                 v.view_result(result)
                 logging.info(f'sqrt of {num1} = {result}')
             elif op == 0:
-                type_num = i.menu()
+                button_click()
             else:
                 print('Enter 1 number: ', end="")
                 num1 = v.get_value(op)
@@ -57,7 +61,7 @@ def button_click():
                 v.view_result(result)
                 logging.info(f'sqrt of {num1} = {result}')
             elif op == 0:
-                type_num = i.menu()
+                button_click()
             else:
                 print('Enter 1 real part: ', end="")
                 num1_real = v.get_value()
@@ -89,3 +93,4 @@ def button_click():
                     result = m.exponent(num1, num2)
                     v.view_result(result)
                     logging.info(f'{num1} ^ {num2} = {result}')
+

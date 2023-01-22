@@ -1,7 +1,4 @@
 from logger import logging
-from math_fun import summ, diff, multi, int_div, remain_div, exponent, square_root
-from fractions import Fraction
-import view
 
 
 def menu():
@@ -14,7 +11,7 @@ def menu():
             return type_num
         elif type_num == 3:
             logging.info('Stop program')
-            break
+            return type_num
         else:
             logging.error('Error: wrong menu selection')
             menu()
@@ -32,7 +29,7 @@ def menu_calc(type_num):
                            '6 - sqrt\n'
                            '7 - %\n'
                            '0 - previous menu\n'))
-                    
+
         elif type_num == 2:
             op = int(input('Operations:\n'
                            '1 - sum +\n'
@@ -42,11 +39,10 @@ def menu_calc(type_num):
                            '5 - pow **\n'
                            '6 - sqrt\n'
                            '0 - previous menu\n'))
+        elif type_num == 3:
+            return -1
+
         return op
-
-
-
-
 
 # def menu_calc_rat(type_num):
 #     while True:
