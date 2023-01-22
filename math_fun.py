@@ -1,3 +1,4 @@
+
 def summ(a:int, b:int)-> int:
     return a + b
 
@@ -18,3 +19,4 @@ def exponent(a:int, b:int)-> int:
 
 def square_root(a:int)-> int:
     return a ** 0.5
+
