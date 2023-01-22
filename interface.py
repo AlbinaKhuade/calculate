@@ -1,12 +1,13 @@
 from logger import logging
-
+import check as ck
 
 def menu():
     while True:
-        type_num = int(input('Working with:\n'
+        type_num = input('Working with:\n'
                              '1 - rational\n'
                              '2 - complex\n'
-                             '3 - exit\n'))
+                             '3 - exit\n')
+        ck.check_in(type_num)                
         if type_num == 1 or type_num == 2:
             return type_num
         elif type_num == 3:
@@ -39,9 +40,6 @@ def menu_calc(type_num):
                            '5 - pow **\n'
                            '6 - sqrt\n'
                            '0 - previous menu\n'))
-        elif type_num == 3:
-            return -1
-
         return op
 
 # def menu_calc_rat(type_num):
