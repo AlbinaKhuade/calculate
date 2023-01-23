@@ -1,22 +1,22 @@
 
-def summ(a:int, b:int)-> int:
+def summ(a, b):
     return a + b
 
-def diff(a:int, b:int)-> int:
+def diff(a, b):
     return a - b
 
-def multi(a:int, b:int)-> int:
+def multi(a, b):
     return a * b
 
-def int_div(a:int, b:int)-> int:
+def int_div(a, b):
     return a / b
 
-def remain_div(a:int, b:int)-> int:
+def remain_div(a, b):
     return a % b
 
-def exponent(a:int, b:int)-> int:
+def exponent(a, b):
     return a**b
 
-def square_root(a:int)-> int:
+def square_root(a):
     return a ** 0.5
 
