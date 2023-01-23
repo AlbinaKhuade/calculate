@@ -35,7 +35,7 @@ def rational_evaluation():
                     '4 - div /\n'
                     '5 - pow **\n'
                     '6 - sqrt\n'
-                    '7 - %\n'
+                    '7 - div %\n'
                     '0 - previous menu\n'))
     if 0 <= op < 8:
         result = None
