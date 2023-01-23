@@ -4,8 +4,10 @@ from logger import logging
 
 def button_click():
     logging.info('Start programm')
+    print("You start to use our calculator")
     while True:
         try:
+            
             type_num = int(input('Working with:\n'
                             '1 - rational\n'
                             '2 - complex\n'
