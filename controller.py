@@ -4,7 +4,7 @@ from logger import logging
 
 def button_click():
     logging.info('Start programm')
-    print('Hello!\U0001F44B You have started using our calculator '+ chr(128522))
+    print('Hello!\U0001F44B You have started using our calculator '+chr(128522))
     while True:
         try:
             type_num = int(input('Working with numbers \U0001F522:\n'+
@@ -89,7 +89,6 @@ def rational_evaluation():
     else:
         raise Exception("invalid value")
     v.view_result(result, title)    
-
 
 def complex_evaluation():
     op = int(input('Operations:\n'+
