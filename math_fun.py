@@ -20,3 +20,6 @@ def exponent(a, b):
 def square_root(a):
     return a ** 0.5
 
+def any_root(a, b):
+    return a**(1/b)
+
