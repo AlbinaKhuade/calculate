@@ -21,7 +21,7 @@ def button_click():
                     print('Bye! '+chr(128521)+' We hope you enjoyed our calculator!')
                     break
             else:
-                raise Exception()
+                raise Exception("invalid value")
         except Exception as err:
             logging.error(err)
             print("ERROR "+chr(10060)+" Try again")
@@ -56,7 +56,7 @@ def rational_evaluation():
                 title = f'{indic} root from {num}'
                 logging.info(f'{title} = {result}')
             else:
-                raise Exception()          
+                raise Exception("invalid value")        
         else:
             print('Enter 1 number: ', end="")
             num1 = v.get_value()
@@ -87,7 +87,7 @@ def rational_evaluation():
                 title = f'{num1} % {num2}'
                 logging.info(f'{title} = {result}')
     else:
-        raise Exception()
+        raise Exception("invalid value")
     v.view_result(result, title)    
 
 
@@ -123,7 +123,7 @@ def complex_evaluation():
                 title = f'{indic} root from {num}'
                 logging.info(f'{title} = {result}')
             else:
-                raise Exception()  
+                raise Exception("invalid value") 
         else:
             print('Enter 1 real part: ', end="")
             num1_real = v.get_value()
@@ -156,5 +156,5 @@ def complex_evaluation():
                 title = f'{num1} ^ {num2}'
                 logging.info(f'{title} = {result}') 
     else:
-        raise Exception()
+        raise Exception("invalid value")
     v.view_result(result,title)
